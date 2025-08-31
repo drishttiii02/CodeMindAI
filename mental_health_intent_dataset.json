@@ -1,0 +1,2080 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hello", "Hi", "Good morning", "Hey there", "Is anyone here?"],
+        "responses": ["Hi! How can I help you today?", "Hello! What’s on your mind?", "Hey! Feel free to ask any mental health-related questions."]
+      },
+      {
+        "tag": "                ",
+        "patterns": [
+          "I feel anxious about everything",
+          "How do I calm my anxiety?",
+          "I get nervous all the time",
+          "What are good ways to handle anxiety?",
+          "I think I have anxiety issues"
+        ],
+        "responses": [
+          "Taking deep breaths and practicing mindfulness can help. Would you like some exercises?",
+          "Anxiety can be overwhelming. Talking to a therapist might help.",
+          "Let’s explore relaxation techniques together. I’m here to support you."
+        ]
+      },
+      {
+        "tag": "stress_work",
+        "patterns": [
+          "I feel stressed at work",
+          "Work pressure is too much",
+          "How can I handle work-related stress?",
+          "I can’t manage my workload",
+          "Deadlines are stressing me out"
+        ],
+        "responses": [
+          "Work stress is common. Have you tried organizing your tasks or taking breaks?",
+          "Prioritize and delegate tasks where possible. Shall I share some productivity tips?",
+          "Remember to take care of yourself. A short walk or deep breathing can help."
+        ]
+      },
+      {
+        "tag": "depression",
+        "patterns": [
+          "I feel sad and hopeless",
+          "I think I’m depressed",
+          "How do I deal with depression?",
+          "Life feels meaningless",
+          "I’m struggling to get out of bed"
+        ],
+        "responses": [
+          "Depression is tough. Reaching out to a therapist can be a good step.",
+          "It’s okay to feel this way. Let’s take small steps together.",
+          "Would you like some tips on managing your daily routine? I’m here for you."
+        ]
+      },
+      {
+        "tag": "relationships_conflicts",
+        "patterns": [
+          "I keep arguing with my partner",
+          "How do I fix my relationship?",
+          "I feel distant from my spouse",
+          "What can I do to improve communication?",
+          "My partner doesn’t understand me"
+        ],
+        "responses": [
+          "Open communication and active listening can help. Shall I share some tips?",
+          "Every relationship has challenges. Would you like advice on resolving conflicts?",
+          "Counseling can be beneficial in such cases. Let me help you explore this option."
+        ]
+      },
+      {
+        "tag": "panic_attack",
+        "patterns": [
+          "I think I’m having a panic attack",
+          "How do I deal with panic attacks?",
+          "My heart races, and I can’t breathe",
+          "I feel like I’m losing control",
+          "What can I do during a panic attack?"
+        ],
+        "responses": [
+          "Focus on your breathing. Inhale deeply for 4 seconds, hold for 7, and exhale for 8.",
+          "Grounding techniques like naming five things you see can help. Let me guide you.",
+          "It’s important to talk to someone you trust or seek professional help. I’m here for support."
+        ]
+      },
+      {
+        "tag": "self_harm",
+        "patterns": [
+          "I have thoughts of hurting myself",
+          "What should I do if I feel like self-harming?",
+          "I can’t stop thinking about harming myself",
+          "I feel overwhelmed and unsafe",
+          "I don’t know how to deal with my thoughts"
+        ],
+        "responses": [
+          "Please prioritize your safety and reach out to someone you trust or a crisis hotline.",
+          "You’re not alone, and help is available. Would you like me to provide resources?",
+          "Talking to a mental health professional is important. Let me help you find support."
+        ]
+      },
+      {
+        "tag": "motivation",
+        "patterns": [
+          "I feel unmotivated",
+          "How can I stay motivated?",
+          "I have no energy to do anything",
+          "I want to be more productive but can’t start",
+          "Tips for staying motivated"
+        ],
+        "responses": [
+          "Setting small, achievable goals can help build momentum. Shall we create a plan?",
+          "Motivation often follows action. Starting with small steps can make a big difference.",
+          "Let’s focus on what inspires you. What’s something you’d like to accomplish?"
+        ]
+      },
+      {
+        "tag": "sleep_issues",
+        "patterns": [
+          "I can’t sleep at night",
+          "How do I deal with insomnia?",
+          "I wake up tired every day",
+          "I have trouble falling asleep",
+          "What can I do to improve my sleep?"
+        ],
+        "responses": [
+          "Try reducing screen time before bed and practicing relaxation techniques.",
+          "Maintaining a consistent sleep schedule can help. Would you like more tips?",
+          "Sleeping problems can be resolved with better sleep hygiene. Let me guide you."
+        ]
+      },
+      {
+        "tag": "anger_management",
+        "patterns": [
+          "I get angry too easily",
+          "How do I control my anger?",
+          "I feel like lashing out at people",
+          "What are good anger management techniques?",
+          "I can’t handle my temper"
+        ],
+        "responses": [
+          "Deep breathing and counting to ten can help in the moment. Would you like more strategies?",
+          "Anger often masks deeper feelings. Let’s explore ways to understand and manage it.",
+          "Therapy or anger management classes can be very helpful. Shall I provide resources?"
+        ]
+      },
+      {
+        "tag": "positivity",
+        "patterns": [
+          "How do I stay positive?",
+          "I want to focus on positive things",
+          "Tips for thinking positively",
+          "How can I overcome negative thoughts?",
+          "I need help staying optimistic"
+        ],
+        "responses": [
+          "Practicing gratitude and focusing on small wins can boost positivity.",
+          "Surrounding yourself with supportive people can help. Would you like more suggestions?",
+          "Daily affirmations and mindfulness exercises can promote a positive mindset."
+        ]
+      },
+      {
+        "tag": "grief",
+        "patterns": [
+          "I lost someone I loved",
+          "How do I cope with grief?",
+          "I’m struggling with loss",
+          "Grieving is overwhelming me",
+          "I can’t stop feeling sad about my loss"
+        ],
+        "responses": [
+          "Grieving is a process, and it’s okay to take your time. Let me help you with coping strategies.",
+          "Talking to a trusted person about your feelings can help. I’m here to support you.",
+          "Would you like resources for support groups or counseling to cope with grief?"
+        ]
+      },
+      {
+        "tag": "mindfulness",
+        "patterns": [
+          "What is mindfulness?",
+          "How can I practice mindfulness?",
+          "I want to stay in the present moment",
+          "Tips for mindfulness exercises",
+          "How do I avoid distractions?"
+        ],
+        "responses": [
+          "Mindfulness involves focusing on the present moment. Shall I share some beginner exercises?",
+          "Meditation and breathing techniques can enhance mindfulness. Let me guide you.",
+          "Mindfulness apps and guided practices can be a great start. Would you like suggestions?"
+        ]
+      },
+      {
+        "tag": "addiction",
+        "patterns": [
+          "I’m struggling with addiction",
+          "How do I overcome addiction?",
+          "I can’t stop drinking",
+          "I need help with substance abuse",
+          "What are steps to recover from addiction?"
+        ],
+        "responses": [
+          "Seeking professional help is a great first step. Let me provide resources for you.",
+          "You’re not alone in this journey. Support groups can also help. Would you like information?",
+          "Recovery takes time and effort. I’m here to guide you with small, manageable steps."
+        ]
+      },
+      {
+        "tag": "self_care",
+        "patterns": [
+          "What is self-care?",
+          "How do I take care of myself?",
+          "I feel like I neglect my needs",
+          "Tips for self-care",
+          "How can I prioritize my well-being?"
+        ],
+        "responses": [
+          "Self-care involves nurturing your physical, emotional, and mental health. Let’s create a plan.",
+          "Taking breaks, eating well, and spending time on hobbies can boost your well-being.",
+          "Would you like me to suggest self-care activities tailored to your routine?"
+        ]
+      },
+      {
+        "tag": "social_skills",
+        "patterns": [
+          "How can I improve my social skills?",
+          "I feel awkward in social situations",
+          "Tips for making friends",
+          "I struggle with small talk",
+          "How do I feel confident in social settings?"
+        ],
+        "responses": [
+          "Practicing active listening and showing genuine interest in others can help. Let me share tips.",
+          "Social skills improve with practice. Start with smaller, comfortable interactions.",
+          "Role-playing or joining social groups can boost confidence. Would you like resources?"
+        ]
+      },
+      {
+        "tag": "guilt",
+        "patterns": [
+          "I feel guilty all the time",
+          "How do I deal with guilt?",
+          "I regret things I’ve done",
+          "I can’t forgive myself",
+          "How do I move past guilt?"
+        ],
+        "responses": [
+          "It's important to forgive yourself. Would you like steps to work through guilt?",
+          "Understanding the root of your guilt can help. Let me guide you.",
+          "Talking to someone you trust can help process guilt. I'm here to support you."
+        ]
+      },
+      {
+        "tag": "loneliness",
+        "patterns": [
+          "I feel so alone",
+          "How do I cope with loneliness?",
+          "I don’t have anyone to talk to",
+          "Being lonely is so hard",
+          "What can I do when I feel isolated?"
+        ],
+        "responses": [
+          "Reaching out to a friend or joining a community can help. Would you like ideas?",
+          "You’re not alone in this. Finding a hobby or volunteering can connect you with others.",
+          "Let’s explore ways to build connections. I’m here to support you."
+        ]
+      },
+      {
+        "tag": "burnout",
+        "patterns": [
+          "I feel burnt out",
+          "How do I recover from burnout?",
+          "Work is draining me completely",
+          "I have no energy for anything",
+          "Burnout is making me unproductive"
+        ],
+        "responses": [
+          "Taking a break and prioritizing self-care is essential. Shall we create a plan?",
+          "Burnout requires rest and reflection. Let’s find ways to recharge.",
+          "You might benefit from talking to a manager or adjusting your workload."
+        ]
+      },
+      {
+        "tag": "self_esteem",
+        "patterns": [
+          "I don’t feel good about myself",
+          "How can I improve my self-esteem?",
+          "I struggle with self-worth",
+          "I feel like I’m not good enough",
+          "How do I build confidence?"
+        ],
+        "responses": [
+          "Building self-esteem starts with recognizing your strengths. Let’s focus on that.",
+          "Positive affirmations and self-care can help. Shall we start small?",
+          "Surrounding yourself with supportive people can make a difference."
+        ]
+      },
+      {
+        "tag": "financial_stress",
+        "patterns": [
+          "Money problems are stressing me out",
+          "I can’t handle my financial situation",
+          "How do I deal with financial stress?",
+          "I feel overwhelmed by debt",
+          "Managing money is so hard"
+        ],
+        "responses": [
+          "Budgeting and financial planning can help. Would you like tips?",
+          "Talking to a financial advisor might provide clarity. Let me guide you.",
+          "You’re not alone in this. Let’s explore ways to reduce stress."
+        ]
+      },
+      {
+        "tag": "fear_of_failure",
+        "patterns": [
+          "I’m afraid of failing",
+          "How do I deal with fear of failure?",
+          "I can’t take risks because of fear",
+          "Failure terrifies me",
+          "I avoid challenges because I fear failing"
+        ],
+        "responses": [
+          "Failure is part of growth. Let’s reframe it as a learning opportunity.",
+          "Setting realistic goals and celebrating small wins can reduce fear.",
+          "Would you like strategies to overcome the fear of failure?"
+        ]
+      },
+      {
+        "tag": "life_purpose",
+        "patterns": [
+          "I feel like my life has no purpose",
+          "How do I find meaning in life?",
+          "I’m lost and don’t know what to do",
+          "What’s the point of life?",
+          "I want to find my passion"
+        ],
+        "responses": [
+          "Exploring your values and interests can provide clarity. Shall we start?",
+          "Purpose can evolve over time. Let’s focus on small steps toward fulfillment.",
+          "Talking to a mentor or counselor can also help. I’m here to guide you."
+        ]
+      },
+      {
+        "tag": "forgiveness",
+        "patterns": [
+          "How do I forgive someone?",
+          "I can’t let go of resentment",
+          "Forgiveness is hard for me",
+          "I want to forgive but don’t know how",
+          "Should I forgive someone who hurt me?"
+        ],
+        "responses": [
+          "Forgiveness is a process that can bring you peace. Let’s take it step by step.",
+          "Understanding your feelings is the first step to forgiveness. Would you like help with that?",
+          "Forgiving doesn’t mean forgetting. Let me guide you through the process."
+        ]
+      },
+      {
+        "tag": "parenting_stress",
+        "patterns": [
+          "Parenting is overwhelming me",
+          "I don’t know how to handle my kids",
+          "How do I deal with parenting stress?",
+          "I feel like I’m failing as a parent",
+          "Parenting is so hard"
+        ],
+        "responses": [
+          "Parenting can be tough. Setting routines and self-care can help. Shall we discuss?",
+          "You’re doing your best, and that matters. Would you like some tips?",
+          "Talking to other parents or joining a support group can be beneficial."
+        ]
+      },
+      {
+        "tag": "jealousy",
+        "patterns": [
+          "I feel jealous all the time",
+          "How do I control jealousy?",
+          "Jealousy is affecting my relationships",
+          "I don’t like feeling this way",
+          "What can I do about jealousy?"
+        ],
+        "responses": [
+          "Understanding the root of your jealousy can help. Let’s explore it together.",
+          "Communicating openly with those involved can reduce misunderstandings.",
+          "Would you like techniques to manage jealousy effectively?"
+        ]
+      },
+      {
+        "tag": "procrastination",
+        "patterns": [
+          "I keep procrastinating",
+          "How do I stop delaying tasks?",
+          "Procrastination is ruining my productivity",
+          "I can’t stop putting things off",
+          "What are tips to beat procrastination?"
+        ],
+        "responses": [
+          "Breaking tasks into smaller steps can help. Let’s make a plan.",
+          "Identifying why you procrastinate can help address the issue. Shall we explore?",
+          "Using a timer or scheduling tasks can boost productivity. Want more tips?"
+        ]
+      },
+      {
+        "tag": "fear_of_change",
+        "patterns": [
+          "I’m scared of change",
+          "How do I adapt to new things?",
+          "Change makes me anxious",
+          "I don’t know how to handle transitions",
+          "Why is change so hard for me?"
+        ],
+        "responses": [
+          "Change is challenging but often brings growth. Let’s focus on the positives.",
+          "Adapting to change takes time. Shall we create a strategy for you?",
+          "Talking through your fears can provide clarity. I’m here to help."
+        ]
+      },
+      {
+        "tag": "boundary_setting",
+        "patterns": [
+          "How do I set boundaries?",
+          "I can’t say no to people",
+          "Setting boundaries feels hard",
+          "I feel taken advantage of",
+          "What are healthy boundaries?"
+        ],
+        "responses": [
+          "Setting boundaries is essential for well-being. Let’s practice together.",
+          "Communicating your needs clearly can help. Shall we create a plan?",
+          "Boundaries can strengthen relationships. Let me share techniques with you."
+        ]
+      },
+      {
+        "tag": "gratitude",
+        "patterns": [
+          "What are ways to practice gratitude?",
+          "How can I be more thankful?",
+          "I want to focus on gratitude",
+          "Gratitude feels unnatural to me",
+          "How do I build a habit of gratitude?"
+        ],
+        "responses": [
+          "Keeping a gratitude journal can help. Would you like guidance on starting one?",
+          "Reflecting on small positives each day builds gratitude. Let’s explore this.",
+          "Practicing mindfulness and gratitude together can enhance your perspective."
+        ]
+      },
+      {
+        "tag": "overthinking",
+        "patterns": [
+          "I can’t stop overthinking",
+          "How do I deal with overthinking?",
+          "Overthinking is exhausting me",
+          "I keep dwelling on the past",
+          "I can’t focus because of my thoughts"
+        ],
+        "responses": [
+          "Mindfulness and grounding techniques can calm overthinking. Would you like tips?",
+          "Redirecting your focus to activities can help. Let’s find something you enjoy.",
+          "Overthinking often stems from anxiety. Shall we explore strategies to address it?"
+        ]
+      },
+      {
+        "tag": "perfectionism",
+        "patterns": [
+          "I want everything to be perfect",
+          "How do I deal with being a perfectionist?",
+          "I feel stressed trying to meet high standards",
+          "Perfectionism is overwhelming me",
+          "I struggle with making mistakes"
+        ],
+        "responses": [
+          "Perfectionism can be exhausting. Let's work on setting realistic goals.",
+          "Mistakes are part of growth. Shall we explore strategies to manage expectations?",
+          "Focusing on progress, not perfection, can help. I’m here to guide you."
+        ]
+      },
+      {
+        "tag": "work_life_balance",
+        "patterns": [
+          "How do I balance work and life?",
+          "I feel like I have no personal time",
+          "Work takes up all my energy",
+          "I can’t find time for myself",
+          "Tips for maintaining work-life balance"
+        ],
+        "responses": [
+          "Setting boundaries around work hours can help. Shall we create a plan?",
+          "Prioritizing personal time is important. Let me suggest ways to achieve balance.",
+          "Breaks and delegation can improve balance. Would you like more advice?"
+        ]
+      },
+      {
+        "tag": "imposter_syndrome",
+        "patterns": [
+          "I feel like I’m not good enough at work",
+          "How do I stop feeling like a fraud?",
+          "Imposter syndrome is affecting me",
+          "I don’t think I deserve my achievements",
+          "I feel like I’m pretending to be capable"
+        ],
+        "responses": [
+          "Acknowledging your achievements can help. Let’s work on building confidence.",
+          "You’re not alone in feeling this way. Shall we explore ways to challenge these thoughts?",
+          "Talking to a mentor or trusted person can help reframe your perspective."
+        ]
+      },
+      {
+        "tag": "assertiveness",
+        "patterns": [
+          "How do I become more assertive?",
+          "I struggle with saying what I want",
+          "I feel ignored in conversations",
+          "Tips for speaking up for myself",
+          "I have trouble standing up for myself"
+        ],
+        "responses": [
+          "Practicing clear communication can help. Let me guide you with techniques.",
+          "Assertiveness is about expressing your needs respectfully. Shall we explore strategies?",
+          "Role-playing and confidence-building exercises can improve assertiveness."
+        ]
+      },
+      {
+        "tag": "overcommitment",
+        "patterns": [
+          "I always take on too much",
+          "How do I stop overcommitting?",
+          "I struggle with saying no",
+          "I feel overwhelmed by my responsibilities",
+          "I can’t manage all my commitments"
+        ],
+        "responses": [
+          "Learning to prioritize tasks is key. Let’s create a system for you.",
+          "Saying no can be difficult but necessary. Shall we practice ways to decline politely?",
+          "Delegating tasks and setting boundaries can help reduce stress."
+        ]
+      },
+      {
+        "tag": "decision_making",
+        "patterns": [
+          "I’m bad at making decisions",
+          "How do I make better choices?",
+          "I second-guess every decision",
+          "Decision-making stresses me out",
+          "I’m afraid of making the wrong choice"
+        ],
+        "responses": [
+          "Breaking decisions into smaller steps can help. Would you like tips?",
+          "Identifying pros and cons can simplify choices. Let’s work through it together.",
+          "Trusting your intuition is important. I’m here to guide you through the process."
+        ]
+      },
+      {
+        "tag": "emotional_exhaustion",
+        "patterns": [
+          "I feel emotionally drained",
+          "How do I deal with emotional exhaustion?",
+          "I have no energy for emotions",
+          "I feel numb and tired",
+          "What are ways to recharge emotionally?"
+        ],
+        "responses": [
+          "Taking time for self-care and rest is important. Shall we create a plan?",
+          "Identifying and addressing the sources of exhaustion can help. I’m here for support.",
+          "Small breaks and engaging in enjoyable activities can recharge you."
+        ]
+      },
+      {
+        "tag": "communication_skills",
+        "patterns": [
+          "How do I improve my communication skills?",
+          "I struggle with expressing myself",
+          "Tips for clear communication",
+          "I feel misunderstood all the time",
+          "How do I communicate effectively?"
+        ],
+        "responses": [
+          "Active listening and empathy are key to communication. Shall we practice?",
+          "Using 'I' statements can help express your feelings clearly.",
+          "Role-playing scenarios can improve skills. Would you like to try it?"
+        ]
+      },
+      {
+        "tag": "trust_issues",
+        "patterns": [
+          "I have trouble trusting people",
+          "How do I rebuild trust?",
+          "I feel betrayed by someone",
+          "I can’t trust anyone",
+          "What should I do about trust issues?"
+        ],
+        "responses": [
+          "Building trust takes time. Shall we explore steps to rebuild it?",
+          "Open and honest communication is key. Let me guide you.",
+          "Focusing on boundaries and clear expectations can help."
+        ]
+      },
+      {
+        "tag": "self_discovery",
+        "patterns": [
+          "I want to discover myself",
+          "How do I find out who I am?",
+          "I feel lost in life",
+          "What is self-discovery?",
+          "I want to understand myself better"
+        ],
+        "responses": [
+          "Journaling and reflecting on your values can help. Would you like tips?",
+          "Exploring new interests and hobbies can lead to self-discovery.",
+          "Let’s focus on what brings you joy and fulfillment."
+        ]
+      },
+      {
+        "tag": "comparison_trap",
+        "patterns": [
+          "I keep comparing myself to others",
+          "How do I stop comparing myself?",
+          "Social media makes me feel inadequate",
+          "I feel like others are better than me",
+          "Comparison is affecting my confidence"
+        ],
+        "responses": [
+          "Remember, everyone’s journey is different. Let’s focus on your strengths.",
+          "Limiting social media time can reduce comparison. Would you like help with that?",
+          "Gratitude practices can shift focus to your own achievements."
+        ]
+      },
+      {
+        "tag": "forgiving_myself",
+        "patterns": [
+          "How do I forgive myself?",
+          "I can’t move past my mistakes",
+          "I’m so hard on myself",
+          "I feel burdened by my past",
+          "Self-forgiveness feels impossible"
+        ],
+        "responses": [
+          "Acknowledging and learning from mistakes is a first step. I’m here to support you.",
+          "Being kind to yourself can help. Would you like exercises for self-compassion?",
+          "Let’s work on reframing your thoughts about the past."
+        ]
+      },
+      {
+        "tag": "social_anxiety",
+        "patterns": [
+          "I feel scared in social situations",
+          "How do I handle social anxiety?",
+          "I avoid talking to people",
+          "Social gatherings make me nervous",
+          "How can I feel more comfortable socially?"
+        ],
+        "responses": [
+          "Gradual exposure to social situations can help. Let’s create a plan.",
+          "Breathing techniques and grounding exercises can ease anxiety.",
+          "Practicing with trusted friends can build confidence. Shall we explore this?"
+        ]
+      },
+      {
+        "tag": "managing_expectations",
+        "patterns": [
+          "I feel pressured to meet expectations",
+          "How do I set realistic expectations?",
+          "People expect too much from me",
+          "I can’t handle high expectations",
+          "What are tips for managing expectations?"
+        ],
+        "responses": [
+          "Clear communication about your limits can help. Let’s work on that.",
+          "Balancing your needs with others’ expectations is key. Shall we explore strategies?",
+          "Focusing on your priorities can reduce pressure. I’m here to guide you."
+        ]
+      },
+      {
+        "tag": "coping_with_change",
+        "patterns": [
+          "Change is hard for me",
+          "How do I deal with big changes?",
+          "I feel anxious about transitions",
+          "I don’t know how to adapt to change",
+          "Change makes me uncomfortable"
+        ],
+        "responses": [
+          "Focusing on what you can control can help ease the transition.",
+          "Adapting to change takes time. Would you like tips to navigate it?",
+          "Building a routine during transitions can provide stability."
+        ]
+      },
+      {
+        "tag": "handling_conflicts",
+        "patterns": [
+          "I struggle with resolving conflicts",
+          "How do I handle disagreements?",
+          "Conflicts make me anxious",
+          "What are tips for managing arguments?",
+          "I want to avoid conflict but don’t know how"
+        ],
+        "responses": [
+          "Active listening and empathy can help resolve conflicts. Let’s discuss strategies.",
+          "Focusing on solutions instead of blame can ease tensions.",
+          "Shall we explore techniques for constructive conversations?"
+        ]
+      },
+      {
+        "tag": "breaking_habits",
+        "patterns": [
+          "I can’t break bad habits",
+          "How do I stop procrastinating?",
+          "Tips for quitting bad habits",
+          "I feel stuck in my habits",
+          "How can I form healthier habits?"
+        ],
+        "responses": [
+          "Replacing a habit with a positive one can be effective. Let’s create a plan.",
+          "Identifying triggers for habits is a great first step. I’m here to guide you.",
+          "Setting small, achievable goals can make change easier."
+        ]
+      },
+      {
+        "tag": "coping_with_rejection",
+        "patterns": [
+          "How do I deal with rejection?",
+          "Rejection makes me feel terrible",
+          "I was rejected and it hurts",
+          "I don’t know how to cope with rejection",
+          "Why does rejection affect me so much?"
+        ],
+        "responses": [
+          "Rejection can be painful, but it’s a chance to learn and grow. Let’s talk about it.",
+          "Focusing on your strengths can help rebuild confidence. I’m here to support you.",
+          "Let’s work through strategies to handle rejection in a healthy way."
+        ]
+      },
+      {
+        "tag": "navigating_uncertainty",
+        "patterns": [
+          "I feel anxious about the future",
+          "How do I handle uncertainty?",
+          "Uncertainty makes me uncomfortable",
+          "I want to feel more in control",
+          "How can I adapt to unpredictable situations?"
+        ],
+        "responses": [
+          "Focusing on what you can control can reduce anxiety about uncertainty.",
+          "Practicing mindfulness can help ground you in the present. Shall we try it?",
+          "Planning small steps can bring clarity. I’m here to guide you."
+        ]
+      },
+      {
+        "tag": "dealing_with_criticism",
+        "patterns": [
+          "Criticism hurts my feelings",
+          "How do I handle negative feedback?",
+          "I feel attacked when criticized",
+          "Tips for responding to criticism",
+          "I want to take feedback better"
+        ],
+        "responses": [
+          "Constructive criticism can be a chance for growth. Let’s reframe your perspective.",
+          "Focusing on the intent behind feedback can help. Would you like guidance?",
+          "Practicing emotional regulation can make responding easier. Shall we discuss?"
+        ]
+      },
+      {
+        "tag": "managing_insecurities",
+        "patterns": [
+          "I feel insecure about myself",
+          "How do I overcome insecurities?",
+          "I compare myself to others too much",
+          "Insecurities are affecting my confidence",
+          "I want to feel better about myself"
+        ],
+        "responses": [
+          "Acknowledging and challenging negative thoughts can help. Let’s work on it.",
+          "Focusing on your unique strengths can build confidence. Shall we explore them?",
+          "Let’s develop a self-compassion practice to address insecurities."
+        ]
+      },
+      {
+        "tag": "letting_go",
+        "patterns": [
+          "I struggle with letting go",
+          "How do I move on from the past?",
+          "I keep holding onto negative emotions",
+          "Letting go feels impossible for me",
+          "How do I release painful memories?"
+        ],
+        "responses": [
+          "Letting go takes time. Let’s focus on small steps toward emotional freedom.",
+          "Practicing mindfulness and acceptance can help. Would you like tips?",
+          "Let’s work on reframing your perspective to move forward."
+        ]
+      },
+      {
+        "tag": "improving_focus",
+        "patterns": [
+          "I can’t focus on tasks",
+          "How do I improve my concentration?",
+          "I get distracted too easily",
+          "Tips for staying focused",
+          "I want to be more productive but can’t concentrate"
+        ],
+        "responses": [
+          "Breaking tasks into smaller steps and taking breaks can improve focus.",
+          "Reducing distractions in your environment can help. Let me guide you.",
+          "Mindfulness exercises can enhance concentration. Would you like to try?"
+        ]
+      },
+      {
+        "tag": "building_resilience",
+        "patterns": [
+          "How do I become more resilient?",
+          "I want to bounce back from challenges",
+          "I feel like I give up too easily",
+          "Tips for building emotional strength",
+          "How can I stay strong during tough times?"
+        ],
+        "responses": [
+          "Resilience develops through challenges. Let’s work on building it together.",
+          "Focusing on small victories can strengthen your mindset. Would you like guidance?",
+          "Practicing gratitude and problem-solving can enhance resilience."
+        ]
+      },
+      {
+        "tag": "coping_with_failure",
+        "patterns": [
+          "I feel like a failure",
+          "How do I deal with failure?",
+          "Failure makes me scared to try again",
+          "I want to learn from my mistakes",
+          "Why does failure hurt so much?"
+        ],
+        "responses": [
+          "Failure is a stepping stone to success. Let’s focus on lessons learned.",
+          "Reframing failure as growth can help. Would you like tips?",
+          "You’re not defined by your failures. Let’s work on building self-confidence."
+        ]
+      },
+      {
+        "tag": "finding_happiness",
+        "patterns": [
+          "I want to be happy",
+          "How do I find happiness?",
+          "Happiness feels out of reach",
+          "What are ways to feel more joyful?",
+          "How can I create a positive mindset?"
+        ],
+        "responses": [
+          "Happiness often comes from small moments. Let’s focus on what brings you joy.",
+          "Practicing gratitude and mindfulness can increase happiness. Would you like help?",
+          "Let’s create a plan to bring more positivity into your daily life."
+        ]
+      },
+      {
+        "tag": "handling_jealousy_in_relationships",
+        "patterns": [
+          "I feel jealous in my relationship",
+          "How do I stop feeling jealous of my partner?",
+          "Jealousy is causing fights with my partner",
+          "Why am I jealous all the time?",
+          "Tips for handling jealousy in relationships"
+        ],
+        "responses": [
+          "Open communication with your partner can help. Let’s discuss how to approach it.",
+          "Jealousy often stems from insecurities. Let’s explore ways to build trust.",
+          "Practicing self-reflection can reduce jealousy. Would you like guidance?"
+        ]
+      },
+      {
+        "tag": "managing_social_media_pressure",
+        "patterns": [
+          "Social media makes me feel bad about myself",
+          "I feel pressured to be perfect online",
+          "How do I deal with social media stress?",
+          "Social media is affecting my self-esteem",
+          "I want to take a break from social media"
+        ],
+        "responses": [
+          "Limiting social media time can reduce stress. Shall we create a schedule?",
+          "Focusing on real-life connections can help balance social media impact.",
+          "Let’s explore ways to detox from social media and feel more grounded."
+        ]
+      },
+      {
+        "tag": "coping_with_envy",
+        "patterns": [
+          "I feel envious of others",
+          "How do I stop being envious?",
+          "Envy is affecting my relationships",
+          "I can’t stop wanting what others have",
+          "Why am I always comparing myself to others?"
+        ],
+        "responses": [
+          "Shifting focus to your achievements can help overcome envy. Let’s talk about it.",
+          "Gratitude practices can reduce envy. Would you like to try one?",
+          "Let’s explore ways to focus on your unique journey."
+        ]
+      },
+      {
+        "tag": "finding_balance",
+        "patterns": [
+          "I feel overwhelmed balancing everything",
+          "How do I find balance in life?",
+          "Life feels out of control",
+          "I want to balance work, family, and personal time",
+          "Tips for creating balance in life"
+        ],
+        "responses": [
+          "Setting priorities and boundaries can help. Would you like tips?",
+          "Balancing responsibilities takes practice. Let’s create a plan together.",
+          "Focusing on self-care can improve overall balance. Let me guide you."
+        ]
+      },
+      {
+        "tag": "overcoming_self_doubt",
+        "patterns": [
+          "I doubt myself all the time",
+          "How do I stop questioning my abilities?",
+          "Self-doubt is holding me back",
+          "I want to feel more confident",
+          "Why do I always feel like I’m not enough?"
+        ],
+        "responses": [
+          "Building confidence starts with small successes. Shall we explore steps?",
+          "Reframing negative thoughts can reduce self-doubt. Would you like help?",
+          "Let’s focus on your strengths to build self-belief."
+        ]
+      },
+      {
+        "tag": "dealing_with_fomo",
+        "patterns": [
+          "I always feel like I’m missing out",
+          "FOMO is stressing me out",
+          "How do I stop comparing my life to others?",
+          "Why do I feel like everyone else is doing better?",
+          "Tips for dealing with FOMO"
+        ],
+        "responses": [
+          "Focusing on your priorities can help reduce FOMO. Let’s discuss ways to shift your mindset.",
+          "Practicing gratitude for your own experiences can bring perspective.",
+          "Limiting social media exposure can reduce FOMO. Would you like to try it?"
+        ]
+      },
+      {
+        "tag": "adapting_to_new_roles",
+        "patterns": [
+          "I’m struggling with a new role at work",
+          "How do I adjust to big life changes?",
+          "I feel out of place in my new role",
+          "Tips for adapting to new situations",
+          "I want to feel confident in my new responsibilities"
+        ],
+        "responses": [
+          "Learning takes time. Let’s create a plan to help you adapt to your new role.",
+          "Building a routine can bring comfort during transitions. Shall we discuss?",
+          "Seeking support from colleagues or friends can help with new challenges."
+        ]
+      },
+      {
+        "tag": "managing_impatience",
+        "patterns": [
+          "I feel impatient all the time",
+          "How do I stop being so impatient?",
+          "Impatience is making me anxious",
+          "I get frustrated when things take too long",
+          "Tips for handling impatience"
+        ],
+        "responses": [
+          "Practicing mindfulness can help manage impatience. Would you like to try?",
+          "Focusing on what you can control can reduce frustration. Let’s talk about it.",
+          "Learning to pause and reflect can help develop patience over time."
+        ]
+      },
+      {
+        "tag": "dealing_with_setbacks",
+        "patterns": [
+          "I’m struggling to recover from a setback",
+          "How do I handle disappointments?",
+          "Setbacks make me feel like a failure",
+          "I feel stuck after a big setback",
+          "Tips for bouncing back after challenges"
+        ],
+        "responses": [
+          "Setbacks are opportunities to learn and grow. Let’s focus on moving forward.",
+          "Taking small steps can help rebuild confidence. I’m here to guide you.",
+          "Reflecting on what went wrong and how to improve can be empowering."
+        ]
+      },
+      {
+        "tag": "coping_with_boredom",
+        "patterns": [
+          "I feel bored all the time",
+          "How do I deal with boredom?",
+          "Life feels monotonous",
+          "What can I do to feel less bored?",
+          "I want to find something exciting to do"
+        ],
+        "responses": [
+          "Exploring new hobbies or interests can bring excitement. Let’s brainstorm some ideas.",
+          "Engaging in creative activities can break monotony. Would you like suggestions?",
+          "Sometimes, boredom is a signal for change. Let’s explore what you need."
+        ]
+      },
+      {
+        "tag": "handling_peer_pressure",
+        "patterns": [
+          "I feel pressured by my friends",
+          "How do I say no to peer pressure?",
+          "Peer pressure is making me uncomfortable",
+          "I don’t want to disappoint my friends",
+          "How do I handle social pressure?"
+        ],
+        "responses": [
+          "Setting clear boundaries can help. Shall we discuss how to express them?",
+          "Learning to say no respectfully can reduce pressure. I’m here to help.",
+          "Focusing on your values can guide your decisions under pressure."
+        ]
+      },
+      {
+        "tag": "coping_with_life_transitions",
+        "patterns": [
+          "I’m struggling with a major life change",
+          "How do I handle transitions in life?",
+          "Change is overwhelming me",
+          "I feel lost during big life changes",
+          "How can I adapt to new situations?"
+        ],
+        "responses": [
+          "Taking things one step at a time can make transitions easier. Let’s plan together.",
+          "Building a support system can provide stability during changes. Shall we discuss?",
+          "Reflecting on your goals can bring clarity during transitions."
+        ]
+      },
+      {
+        "tag": "dealing_with_perceived_failures",
+        "patterns": [
+          "I feel like I failed my family",
+          "How do I move past feeling like a failure?",
+          "I think I’ve let people down",
+          "Perceived failure is consuming my thoughts",
+          "What can I do to stop feeling like a failure?"
+        ],
+        "responses": [
+          "You are more than your perceived failures. Let’s focus on what you’ve achieved.",
+          "Reframing how you define success can help. Shall we discuss?",
+          "Sometimes, we are too hard on ourselves. Let’s practice self-compassion."
+        ]
+      },
+      {
+        "tag": "building_trust",
+        "patterns": [
+          "How do I rebuild trust with someone?",
+          "I find it hard to trust people",
+          "What are tips for earning trust?",
+          "How can I strengthen trust in relationships?",
+          "Trust is an issue for me"
+        ],
+        "responses": [
+          "Open communication and consistency are key to building trust.",
+          "Trust takes time. Let’s work on small steps to rebuild it.",
+          "Reflecting on your own feelings can help clarify trust issues."
+        ]
+      },
+      {
+        "tag": "managing_anger",
+        "patterns": [
+          "I get angry too easily",
+          "How do I control my temper?",
+          "I feel like I’m always on edge",
+          "Tips for anger management",
+          "Anger is affecting my relationships"
+        ],
+        "responses": [
+          "Deep breathing and mindfulness can help manage anger. Would you like to try?",
+          "Understanding triggers for your anger can provide insight. Let’s discuss.",
+          "Redirecting energy into physical activity or hobbies can help diffuse anger."
+        ]
+      },
+      {
+        "tag": "managing_shyness",
+        "patterns": [
+          "I feel shy in social situations",
+          "How do I overcome shyness?",
+          "I struggle to talk to people",
+          "Tips for dealing with shyness",
+          "I want to feel more confident around others"
+        ],
+        "responses": [
+          "Gradually exposing yourself to social situations can help build confidence.",
+          "Practicing conversations in a safe environment can reduce shyness.",
+          "Let’s explore ways to build your social confidence step by step."
+        ]
+      },
+      {
+        "tag": "coping_with_lack_of_direction",
+        "patterns": [
+          "I feel like I have no direction in life",
+          "How do I find my purpose?",
+          "Life feels meaningless to me",
+          "I’m lost and don’t know what to do",
+          "I want to find a sense of direction"
+        ],
+        "responses": [
+          "Exploring your values and interests can bring clarity. Let’s work on it together.",
+          "Taking small steps toward goals can help you feel more purposeful.",
+          "Talking to a mentor or counselor can provide guidance."
+        ]
+      },
+      {
+        "tag": "overcoming_procrastination",
+        "patterns": [
+          "I keep delaying tasks",
+          "How do I stop procrastinating?",
+          "Procrastination is ruining my productivity",
+          "Why can’t I get started on my work?",
+          "Tips for beating procrastination"
+        ],
+        "responses": [
+          "Breaking tasks into smaller parts can make them feel more manageable.",
+          "Setting a timer for short bursts of focused work can help. Shall we try it?",
+          "Understanding why you procrastinate can help address the root cause."
+        ]
+      },
+      {
+        "tag": "coping_with_fear",
+        "patterns": [
+          "I feel scared all the time",
+          "How do I manage my fears?",
+          "Fear is controlling my decisions",
+          "I avoid things because I’m afraid",
+          "What are ways to overcome fear?"
+        ],
+        "responses": [
+          "Gradual exposure to fears can reduce their intensity over time.",
+          "Let’s practice grounding techniques to address fear in the moment.",
+          "Reflecting on the source of your fears can help provide clarity."
+        ]
+      },
+      {
+        "tag": "improving_productivity",
+        "patterns": [
+          "I feel unproductive",
+          "How do I get more done?",
+          "Tips for staying productive",
+          "I can’t focus on my work",
+          "How do I make better use of my time?"
+        ],
+        "responses": [
+          "Time-blocking and setting clear priorities can boost productivity.",
+          "Taking regular breaks can actually help you get more done.",
+          "Shall we create a productivity plan tailored to your needs?"
+        ]
+      },
+      {
+        "tag": "finding_clarity",
+        "patterns": [
+          "I feel confused about what to do",
+          "How do I find clarity in my thoughts?",
+          "I want to make better decisions",
+          "My mind feels cluttered",
+          "I can’t think clearly"
+        ],
+        "responses": [
+          "Practicing mindfulness can bring clarity to your thoughts.",
+          "Breaking big decisions into smaller steps can help. Let’s talk about it.",
+          "Journaling can be a great way to organize your thoughts. Shall we try it?"
+        ]
+      },
+      {
+        "tag": "managing_doubt",
+        "patterns": [
+          "I doubt myself all the time",
+          "How do I stop second-guessing myself?",
+          "I lack confidence in my decisions",
+          "Doubt is holding me back",
+          "Tips for overcoming self-doubt"
+        ],
+        "responses": [
+          "Recognizing your strengths can help overcome doubt. Let’s work on it.",
+          "Reframing negative thoughts can reduce doubt. Would you like help with that?",
+          "Let’s focus on building your self-belief step by step."
+        ]
+      },
+      {
+        "tag": "dealing_with_gratitude",
+        "patterns": [
+          "I find it hard to feel grateful",
+          "How do I practice gratitude?",
+          "Gratitude feels unnatural to me",
+          "I want to focus on the good in life",
+          "Why is gratitude important?"
+        ],
+        "responses": [
+          "Gratitude journals can be a great start. Would you like help setting one up?",
+          "Reflecting on small daily positives can help build gratitude.",
+          "Practicing mindfulness can enhance your sense of gratitude. Shall we try?"
+        ]
+      },
+      {
+        "tag": "handling_unexpected_events",
+        "patterns": [
+          "I struggle with sudden changes",
+          "How do I adapt to unexpected events?",
+          "Unexpected situations stress me out",
+          "I feel lost when plans change",
+          "What can I do to stay calm during surprises?"
+        ],
+        "responses": [
+          "Focusing on what you can control can help. Would you like strategies?",
+          "Mindfulness techniques can help manage stress from unexpected events.",
+          "Taking a moment to pause and breathe can make a difference."
+        ]
+      },
+      {
+        "tag": "accepting_help",
+        "patterns": [
+          "I find it hard to ask for help",
+          "How do I accept help from others?",
+          "I feel weak when I need help",
+          "Asking for help makes me uncomfortable",
+          "Why is it so hard to rely on others?"
+        ],
+        "responses": [
+          "Asking for help shows strength, not weakness. Let’s explore this together.",
+          "Accepting support can be a way to grow. Would you like tips on asking for help?",
+          "Building trust with others can make asking for help easier."
+        ]
+      },
+      {
+        "tag": "managing_fatigue",
+        "patterns": [
+          "I feel tired all the time",
+          "How do I get more energy?",
+          "Fatigue is affecting my life",
+          "I’m always exhausted",
+          "What can I do to feel less drained?"
+        ],
+        "responses": [
+          "Balancing rest and activity can help combat fatigue. Shall we make a plan?",
+          "Reviewing your daily routine might uncover energy drains. Let’s talk about it.",
+          "Nutrition, hydration, and sleep hygiene are key. Would you like tips?"
+        ]
+      },
+      {
+        "tag": "coping_with_loss",
+        "patterns": [
+          "I lost someone close to me",
+          "How do I cope with losing a loved one?",
+          "Grief feels overwhelming",
+          "I miss someone who passed away",
+          "How can I process loss?"
+        ],
+        "responses": [
+          "Grieving is a process, and it’s okay to take your time. I’m here to support you.",
+          "Reflecting on good memories can be a way to honor your loved one.",
+          "Would you like suggestions for support groups or counseling resources?"
+        ]
+      },
+      {
+        "tag": "handling_embarrassment",
+        "patterns": [
+          "I feel embarrassed easily",
+          "How do I get over embarrassing moments?",
+          "I can’t stop thinking about a mistake I made",
+          "Embarrassment makes me anxious",
+          "What can I do to feel less self-conscious?"
+        ],
+        "responses": [
+          "Everyone makes mistakes. Let’s work on reframing the situation.",
+          "Focusing on what you’ve learned can help move past embarrassment.",
+          "Practicing self-compassion can reduce the impact of embarrassing moments."
+        ]
+      },
+      {
+        "tag": "overcoming_revengeful_thoughts",
+        "patterns": [
+          "I feel vengeful toward someone",
+          "How do I stop wanting revenge?",
+          "Revenge is all I can think about",
+          "I feel angry and want to retaliate",
+          "Why can’t I let go of these thoughts?"
+        ],
+        "responses": [
+          "Redirecting your focus to personal growth can help. Let’s talk about it.",
+          "Forgiveness can bring you peace, even if it feels difficult at first.",
+          "Reflecting on the root of your anger can help you let go. Shall we explore?"
+        ]
+      },
+      {
+        "tag": "coping_with_perfectionism",
+        "patterns": [
+          "I want everything to be perfect",
+          "How do I deal with being a perfectionist?",
+          "Perfectionism is making me stressed",
+          "I can’t handle making mistakes",
+          "Tips for overcoming perfectionism"
+        ],
+        "responses": [
+          "Perfectionism can be draining. Let’s focus on setting realistic goals.",
+          "Celebrating progress, not just perfection, can reduce stress.",
+          "Would you like techniques to manage high expectations for yourself?"
+        ]
+      },
+      {
+        "tag": "dealing_with_loneliness",
+        "patterns": [
+          "I feel so lonely",
+          "How do I cope with loneliness?",
+          "I don’t have anyone to talk to",
+          "Being alone is really hard for me",
+          "What can I do to feel less isolated?"
+        ],
+        "responses": [
+          "Reaching out to someone you trust can help. Would you like ideas?",
+          "Joining social groups or trying new activities can reduce loneliness.",
+          "You’re not alone in this. Let’s explore ways to connect with others."
+        ]
+      },
+      {
+        "tag": "handling_uncertainty",
+        "patterns": [
+          "I feel anxious about the future",
+          "How do I deal with uncertainty?",
+          "Uncertainty makes me uncomfortable",
+          "I can’t handle not knowing what will happen",
+          "What can I do to feel more in control?"
+        ],
+        "responses": [
+          "Focusing on what you can control can bring calm. Shall we discuss strategies?",
+          "Practicing mindfulness can help manage anxiety about the unknown.",
+          "Breaking down plans into small, actionable steps can make uncertainty less daunting."
+        ]
+      },
+      {
+        "tag": "dealing_with_disappointment",
+        "patterns": [
+          "I’m disappointed with how things turned out",
+          "How do I handle disappointment?",
+          "I feel let down by someone",
+          "Disappointment is weighing on me",
+          "What can I do to feel better about unmet expectations?"
+        ],
+        "responses": [
+          "Acknowledging your feelings is the first step. I’m here to support you.",
+          "Focusing on what you’ve learned can help reframe disappointment.",
+          "Shall we explore ways to set realistic expectations in the future?"
+        ]
+      },
+      {
+        "tag": "managing_pride",
+        "patterns": [
+          "I struggle with admitting when I’m wrong",
+          "How do I manage my pride?",
+          "Pride is affecting my relationships",
+          "I don’t like asking for help because of my pride",
+          "Why does pride make me feel stuck?"
+        ],
+        "responses": [
+          "Acknowledging vulnerability can strengthen connections. Shall we talk about it?",
+          "Reflecting on the benefits of collaboration can help balance pride.",
+          "Practicing humility doesn’t diminish you—it can build trust. Let’s explore this."
+        ]
+      },
+      {
+        "tag": "coping_with_failure",
+        "patterns": [
+          "I feel like a failure",
+          "How do I move past failure?",
+          "Failure makes me afraid to try again",
+          "I keep thinking about my mistakes",
+          "Why does failure hurt so much?"
+        ],
+        "responses": [
+          "Failure is an opportunity to grow. Let’s focus on the lessons you’ve learned.",
+          "Reframing failure as a step toward success can help. Would you like guidance?",
+          "Let’s work on building resilience and confidence together."
+        ]
+      },
+      {
+        "tag": "managing_hyperfocus",
+        "patterns": [
+          "I get too focused on one thing",
+          "How do I stop hyperfocusing?",
+          "Hyperfocus makes me lose track of time",
+          "I can’t switch tasks easily",
+          "What can I do to balance focus?"
+        ],
+        "responses": [
+          "Setting timers can help you shift focus when needed. Let’s create a plan.",
+          "Taking short breaks can balance focus and prevent burnout.",
+          "Would you like strategies to manage hyperfocus effectively?"
+        ]
+      },
+      {
+        "tag": "dealing_with_overthinking",
+        "patterns": [
+          "I can’t stop overthinking",
+          "Overthinking is exhausting me",
+          "I dwell on things too much",
+          "Why do I overanalyze everything?",
+          "How do I clear my mind of thoughts?"
+        ],
+        "responses": [
+          "Practicing mindfulness can calm a busy mind. Would you like exercises?",
+          "Focusing on the present moment can help reduce overthinking.",
+          "Let’s explore ways to redirect your thoughts when they spiral."
+        ]
+      },
+      {
+        "tag": "coping_with_regret",
+        "patterns": [
+          "I regret the choices I made",
+          "How do I let go of regret?",
+          "Regret is consuming me",
+          "I can’t stop thinking about my mistakes",
+          "What can I do to forgive myself for past actions?"
+        ],
+        "responses": [
+          "Regret is natural, but focusing on what you can change now is key. Shall we talk about it?",
+          "Reflecting on lessons learned can turn regret into growth. Let’s work on it.",
+          "Self-forgiveness is essential. Would you like tips to start that process?"
+        ]
+      },
+      {
+        "tag": "handling_confusion",
+        "patterns": [
+          "I feel so confused about life",
+          "How do I find clarity when I’m lost?",
+          "Confusion makes it hard to move forward",
+          "I don’t know what direction to take",
+          "How can I make sense of my thoughts?"
+        ],
+        "responses": [
+          "Breaking down your concerns into smaller parts can help bring clarity.",
+          "Journaling your thoughts can help organize them. Shall we try?",
+          "Talking through your confusion can provide insights. I’m here to listen."
+        ]
+      },
+      {
+        "tag": "dealing_with_inferiority",
+        "patterns": [
+          "I feel inferior to others",
+          "Why do I feel like I’m not good enough?",
+          "I constantly compare myself to people who are better",
+          "How do I overcome feelings of inferiority?",
+          "What can I do to build self-worth?"
+        ],
+        "responses": [
+          "Recognizing your unique strengths can help. Let’s identify them together.",
+          "Comparison steals joy. Let’s focus on what makes you special.",
+          "Practicing self-affirmations can boost your confidence over time."
+        ]
+      },
+      {
+        "tag": "managing_responsibility",
+        "patterns": [
+          "I feel overwhelmed by responsibilities",
+          "How do I manage all my obligations?",
+          "Responsibility is stressing me out",
+          "I can’t handle the pressure of my duties",
+          "What are tips for balancing responsibilities?"
+        ],
+        "responses": [
+          "Prioritizing tasks and delegating when possible can lighten the load. Shall we create a plan?",
+          "Breaking responsibilities into smaller, manageable tasks can help.",
+          "Focusing on one thing at a time can reduce stress. Let’s work on it."
+        ]
+      },
+      {
+        "tag": "coping_with_repetitive_thoughts",
+        "patterns": [
+          "I can’t stop thinking about the same thing",
+          "Repetitive thoughts are exhausting me",
+          "How do I deal with obsessive thinking?",
+          "My mind keeps replaying scenarios",
+          "Why can’t I stop overanalyzing things?"
+        ],
+        "responses": [
+          "Redirecting your focus to an engaging activity can help. Let’s find one for you.",
+          "Practicing mindfulness can interrupt repetitive thoughts. Would you like to try?",
+          "Identifying the root cause of these thoughts can provide relief."
+        ]
+      },
+      {
+        "tag": "handling_uncertainty_in_relationships",
+        "patterns": [
+          "I feel unsure about my relationship",
+          "How do I handle doubts in my relationship?",
+          "Uncertainty is affecting my connection with my partner",
+          "I’m questioning the future of my relationship",
+          "What should I do when I feel unsure about love?"
+        ],
+        "responses": [
+          "Open communication with your partner can clarify uncertainties. Shall we discuss how to approach this?",
+          "Reflecting on your feelings and needs can guide you. Let’s explore them.",
+          "Counseling can help navigate relationship doubts. Would you like resources?"
+        ]
+      },
+      {
+        "tag": "navigating_friendship_issues",
+        "patterns": [
+          "I’m having problems with a friend",
+          "How do I handle conflicts in friendships?",
+          "A friend betrayed me, and I don’t know what to do",
+          "I feel distant from my friends",
+          "What can I do to strengthen my friendships?"
+        ],
+        "responses": [
+          "Honest communication is key to resolving friendship issues. Let’s explore how to start.",
+          "Building trust and understanding can help repair relationships.",
+          "Reflecting on your needs and boundaries can improve friendships. Let’s talk about it."
+        ]
+      },
+      {
+        "tag": "managing_sensitivity",
+        "patterns": [
+          "I feel too sensitive to criticism",
+          "How do I handle being overly sensitive?",
+          "I take things too personally",
+          "My emotions get hurt easily",
+          "What can I do to be less sensitive?"
+        ],
+        "responses": [
+          "Practicing emotional regulation can help. Would you like techniques to try?",
+          "Recognizing the intent behind criticism can reduce sensitivity. Let’s talk about it.",
+          "Building self-confidence can help you feel less affected. Shall we start there?"
+        ]
+      },
+      {
+        "tag": "coping_with_rejection_in_friendships",
+        "patterns": [
+          "My friend stopped talking to me",
+          "How do I deal with being rejected by a friend?",
+          "Friendship rejection hurts so much",
+          "I feel excluded by my friends",
+          "What can I do to cope with losing a friend?"
+        ],
+        "responses": [
+          "Friendship changes can be painful. Let’s focus on what you need to heal.",
+          "Exploring other supportive relationships can help you move forward.",
+          "Reflecting on the friendship can provide clarity and closure. I’m here to help."
+        ]
+      },
+      {
+        "tag": "coping_with_jealousy",
+        "patterns": [
+          "I feel jealous of my friend’s success",
+          "How do I stop being envious?",
+          "Jealousy is ruining my relationships",
+          "Why do I feel this way when others succeed?",
+          "What can I do to feel happy for others?"
+        ],
+        "responses": [
+          "Focusing on your own goals can help reduce jealousy. Shall we create a plan?",
+          "Practicing gratitude can shift your mindset. Would you like help with this?",
+          "Let’s work on reframing your thoughts to celebrate others’ successes while focusing on your own journey."
+        ]
+      },
+      {
+        "tag": "building_better_habits",
+        "patterns": [
+          "I want to develop good habits",
+          "How do I stick to new routines?",
+          "I keep falling back into bad habits",
+          "What are tips for building healthy habits?",
+          "How can I maintain consistency with my goals?"
+        ],
+        "responses": [
+          "Starting small and building consistency can help. Let’s create a plan.",
+          "Tracking your progress can motivate you to maintain habits.",
+          "Rewarding yourself for milestones can make habits more enjoyable."
+        ]
+      },
+      {
+        "tag": "dealing_with_pessimism",
+        "patterns": [
+          "I always think about the worst-case scenario",
+          "How do I stop being so negative?",
+          "Pessimism is affecting my outlook on life",
+          "I feel like nothing good ever happens",
+          "How can I develop a more positive mindset?"
+        ],
+        "responses": [
+          "Challenging negative thoughts with evidence can help. Would you like to try?",
+          "Practicing gratitude daily can shift your perspective over time.",
+          "Surrounding yourself with positivity can make a difference. Let’s find ways to do this."
+        ]
+      },
+      {
+        "tag": "overcoming_rejection_fear",
+        "patterns": [
+          "I’m scared of being rejected",
+          "How do I deal with rejection anxiety?",
+          "I avoid situations because I fear rejection",
+          "Why does rejection scare me so much?",
+          "What can I do to build confidence despite rejection?"
+        ],
+        "responses": [
+          "Rejection is a part of life, but it doesn’t define you. Let’s focus on building resilience.",
+          "Practicing self-affirmations can help reduce fear. Would you like to try?",
+          "Taking small risks can desensitize you to rejection over time. Let’s plan together."
+        ]
+      },
+      {
+        "tag": "navigating_major_decisions",
+        "patterns": [
+          "I can’t decide what to do with my life",
+          "How do I make a major decision?",
+          "Big decisions stress me out",
+          "I’m scared of choosing the wrong path",
+          "What can I do to feel confident about big choices?"
+        ],
+        "responses": [
+          "Breaking decisions into smaller steps can make them more manageable.",
+          "Weighing pros and cons can bring clarity. Would you like help with this?",
+          "Reflecting on your values and long-term goals can guide you. Let’s explore this."
+        ]
+      },
+      {
+        "tag": "handling_boredom_in_relationships",
+        "patterns": [
+          "I feel bored in my relationship",
+          "How do I bring excitement back to my relationship?",
+          "Our relationship feels routine",
+          "We don’t do anything exciting together",
+          "I want to feel closer to my partner"
+        ],
+        "responses": [
+          "Exploring new activities together can reignite connection. Let’s brainstorm ideas.",
+          "Open communication about your feelings can strengthen your bond.",
+          "Planning surprises or special dates can add excitement. Would you like tips?"
+        ]
+      },
+      {
+        "tag": "coping_with_resentment",
+        "patterns": [
+          "I feel resentful toward someone",
+          "How do I let go of resentment?",
+          "Resentment is eating me up inside",
+          "I can’t forgive someone for what they did",
+          "What can I do to feel less bitter?"
+        ],
+        "responses": [
+          "Focusing on your own peace can help release resentment. Let’s work on it.",
+          "Practicing empathy and understanding can ease bitterness. Shall we try?",
+          "Would you like to explore steps for forgiveness and emotional freedom?"
+        ]
+      },
+      {
+        "tag": "managing_social_exhaustion",
+        "patterns": [
+          "I feel drained after socializing",
+          "How do I manage social burnout?",
+          "I love my friends, but I feel tired around them",
+          "Social interactions exhaust me",
+          "How do I recharge after being social?"
+        ],
+        "responses": [
+          "Scheduling downtime for yourself can help replenish energy. Let’s create a balance.",
+          "Focusing on meaningful interactions can reduce social fatigue.",
+          "Mindfulness practices after socializing can help you recharge. Would you like tips?"
+        ]
+      },
+      {
+        "tag": "dealing_with_conflicting_goals",
+        "patterns": [
+          "I have too many goals and feel stuck",
+          "How do I choose between conflicting priorities?",
+          "I don’t know which goal to focus on",
+          "I’m overwhelmed by everything I want to achieve",
+          "What can I do to align my goals?"
+        ],
+        "responses": [
+          "Prioritizing goals based on values can help. Let’s work through them together.",
+          "Breaking down each goal into steps can make decisions easier.",
+          "Reflecting on what matters most to you can bring clarity. Would you like to try?"
+        ]
+      },
+      {
+        "tag": "coping_with_rejection_at_work",
+        "patterns": [
+          "I feel rejected by my coworkers",
+          "How do I deal with rejection at work?",
+          "My boss didn’t like my ideas, and I feel hurt",
+          "I’m struggling to fit in at work",
+          "What can I do to handle workplace rejection?"
+        ],
+        "responses": [
+          "Focusing on professional growth can help redirect your energy.",
+          "Building rapport with colleagues takes time. Would you like strategies to connect?",
+          "Rejection can be an opportunity to refine your approach. Let’s talk about it."
+        ]
+      },
+      {
+        "tag": "handling_difficult_conversations",
+        "patterns": [
+          "I avoid tough conversations",
+          "How do I approach sensitive topics?",
+          "Difficult conversations make me anxious",
+          "I don’t know how to talk about uncomfortable things",
+          "What are tips for handling hard discussions?"
+        ],
+        "responses": [
+          "Planning what to say in advance can ease anxiety. Let’s work on a script.",
+          "Using ‘I’ statements can help keep the conversation constructive.",
+          "Shall we practice strategies for clear and empathetic communication?"
+        ]
+      },
+      {
+        "tag": "coping_with_lack_of_motivation",
+        "patterns": [
+          "I can’t seem to motivate myself",
+          "How do I push through laziness?",
+          "I feel like I have no drive to do anything",
+          "Lack of motivation is holding me back",
+          "What can I do to find inspiration again?"
+        ],
+        "responses": [
+          "Starting small and celebrating progress can reignite motivation.",
+          "Exploring your ‘why’ can help clarify your purpose. Let’s work on it together.",
+          "Would you like tips to overcome procrastination and build momentum?"
+        ]
+      },
+      {
+        "tag": "building_empathy",
+        "patterns": [
+          "How do I become more empathetic?",
+          "I struggle to understand others’ feelings",
+          "What are ways to build empathy?",
+          "I want to connect with people on a deeper level",
+          "How can I be more understanding?"
+        ],
+        "responses": [
+          "Active listening and putting yourself in others’ shoes can enhance empathy.",
+          "Practicing perspective-taking can deepen your understanding of others’ emotions.",
+          "Shall we explore ways to practice empathy in your daily interactions?"
+        ]
+      },
+      {
+        "tag": "managing_sibling_conflicts",
+        "patterns": [
+          "My sibling and I fight all the time",
+          "How do I improve my relationship with my sibling?",
+          "I feel like my sibling doesn’t understand me",
+          "Sibling conflicts are stressing me out",
+          "What can I do to get along better with my sibling?"
+        ],
+        "responses": [
+          "Open communication and setting boundaries can help strengthen your relationship.",
+          "Finding shared activities can improve your bond. Would you like ideas?",
+          "Reflecting on each other’s perspectives can reduce conflicts. Let’s explore this."
+        ]
+      },
+      {
+        "tag": "coping_with_insecurity_in_relationships",
+        "patterns": [
+          "I feel insecure in my relationship",
+          "How do I stop doubting my partner?",
+          "Insecurity is ruining my relationship",
+          "I’m scared my partner will leave me",
+          "What can I do to feel more secure in love?"
+        ],
+        "responses": [
+          "Building self-confidence can reduce insecurity. Shall we explore ways to do that?",
+          "Openly sharing your concerns with your partner can strengthen trust.",
+          "Let’s focus on strategies to boost your sense of security in the relationship."
+        ]
+      },
+      {
+        "tag": "overcoming_indecisiveness",
+        "patterns": [
+          "I can’t make decisions easily",
+          "How do I stop being so indecisive?",
+          "I keep second-guessing my choices",
+          "Making decisions stresses me out",
+          "What can I do to be more decisive?"
+        ],
+        "responses": [
+          "Breaking decisions into smaller steps can help. Let’s practice together.",
+          "Weighing the pros and cons can bring clarity. Would you like to try this?",
+          "Building confidence in your judgment takes practice. Let’s start small."
+        ]
+      },
+      {
+        "tag": "managing_time_effectively",
+        "patterns": [
+          "I feel like I have no time for anything",
+          "How do I manage my time better?",
+          "Time management is hard for me",
+          "I keep procrastinating and wasting time",
+          "What are tips for effective time use?"
+        ],
+        "responses": [
+          "Creating a schedule and prioritizing tasks can help. Shall we work on it?",
+          "Breaking work into smaller time blocks can improve focus and productivity.",
+          "Identifying time wasters can help reclaim your day. Let’s analyze your routine."
+        ]
+      },
+      {
+        "tag": "handling_performance_anxiety",
+        "patterns": [
+          "I get nervous before big presentations",
+          "How do I overcome performance anxiety?",
+          "Stage fright is holding me back",
+          "I feel anxious about performing well",
+          "What can I do to calm down before a big event?"
+        ],
+        "responses": [
+          "Practicing deep breathing and visualization can calm nerves. Shall we try?",
+          "Focusing on preparation and positive self-talk can reduce anxiety.",
+          "Would you like strategies for building confidence in high-pressure situations?"
+        ]
+      },
+      {
+        "tag": "dealing_with_revengeful_feelings",
+        "patterns": [
+          "I feel vengeful toward someone",
+          "How do I let go of revenge?",
+          "Revenge is consuming my thoughts",
+          "I want to get back at someone who hurt me",
+          "What can I do to stop these negative feelings?"
+        ],
+        "responses": [
+          "Focusing on your own peace and growth can help release revengeful feelings.",
+          "Practicing forgiveness and self-compassion can bring relief. Would you like help?",
+          "Let’s work on strategies to redirect your energy toward positive goals."
+        ]
+      },
+      {
+        "tag": "managing_technology_dependence",
+        "patterns": [
+          "I feel addicted to my phone",
+          "How do I reduce my screen time?",
+          "Technology is distracting me from real life",
+          "I can’t stop checking my social media",
+          "What can I do to create healthy tech habits?"
+        ],
+        "responses": [
+          "Setting boundaries for tech use can help. Shall we create a plan?",
+          "Taking breaks from screens and engaging in offline activities can bring balance.",
+          "Would you like tips to manage your time on social media effectively?"
+        ]
+      },
+      {
+        "tag": "managing_perfectionism",
+        "patterns": [
+          "I want everything to be perfect",
+          "How do I stop obsessing over perfection?",
+          "Perfectionism is holding me back",
+          "I feel stressed trying to make things flawless",
+          "Why do I need everything to be perfect?"
+        ],
+        "responses": [
+          "Setting realistic goals can reduce the pressure of perfectionism. Shall we work on this together?",
+          "Remember, progress is more important than perfection. Let’s focus on achievable steps.",
+          "Would you like techniques to manage high expectations for yourself?"
+        ]
+      },
+      {
+        "tag": "coping_with_social_anxiety",
+        "patterns": [
+          "I feel nervous in social settings",
+          "How do I overcome social anxiety?",
+          "I avoid gatherings because of anxiety",
+          "Social interactions make me uncomfortable",
+          "What are tips to handle social anxiety?"
+        ],
+        "responses": [
+          "Gradual exposure to social situations can help build confidence. Would you like to plan a strategy?",
+          "Practicing mindfulness can reduce social anxiety. Let’s explore how.",
+          "Building small, positive social interactions can ease anxiety over time."
+        ]
+      },
+      {
+        "tag": "coping_with_chronic_stress",
+        "patterns": [
+          "I feel stressed all the time",
+          "How do I deal with chronic stress?",
+          "Stress is affecting my health",
+          "I can’t relax because I’m always stressed",
+          "What are tips to reduce long-term stress?"
+        ],
+        "responses": [
+          "Mindfulness and relaxation techniques can reduce chronic stress. Shall we try them?",
+          "Breaking down stressors into manageable parts can help. Let’s create a plan.",
+          "Taking regular breaks and prioritizing self-care can alleviate stress."
+        ]
+      },
+      {
+        "tag": "managing_family_conflicts",
+        "patterns": [
+          "I’m having problems with my family",
+          "How do I resolve family conflicts?",
+          "Family arguments are stressing me out",
+          "I feel misunderstood by my family",
+          "What can I do to improve communication at home?"
+        ],
+        "responses": [
+          "Active listening and empathy can help resolve family conflicts. Let’s explore strategies.",
+          "Setting boundaries and discussing issues calmly can improve family relationships.",
+          "Would you like tips to communicate effectively with your family?"
+        ]
+      },
+      {
+        "tag": "dealing_with_negative_self_talk",
+        "patterns": [
+          "I have a lot of negative thoughts about myself",
+          "How do I stop criticizing myself?",
+          "Negative self-talk is affecting my confidence",
+          "I feel like I’m my own worst enemy",
+          "What can I do to think more positively about myself?"
+        ],
+        "responses": [
+          "Challenging negative thoughts with positive affirmations can help. Shall we try this together?",
+          "Reflecting on your strengths and achievements can reduce negative self-talk.",
+          "Would you like to practice techniques for cultivating self-compassion?"
+        ]
+      },
+      {
+        "tag": "building_self_discipline",
+        "patterns": [
+          "I struggle to stay disciplined",
+          "How do I develop better self-discipline?",
+          "I keep procrastinating instead of working",
+          "Discipline is hard for me to maintain",
+          "What can I do to stay consistent with my goals?"
+        ],
+        "responses": [
+          "Breaking tasks into small, manageable steps can build discipline. Let’s create a plan.",
+          "Rewarding yourself for completing tasks can reinforce positive behavior.",
+          "Would you like tips to build a routine that supports your goals?"
+        ]
+      },
+      {
+        "tag": "coping_with_grief",
+        "patterns": [
+          "I lost someone I loved",
+          "How do I deal with grief?",
+          "Grieving feels overwhelming",
+          "I can’t move past my loss",
+          "What can I do to cope with loss?"
+        ],
+        "responses": [
+          "Grief is a process, and it’s okay to take your time. Would you like support through this journey?",
+          "Reflecting on positive memories can help you honor your loved one.",
+          "Joining a support group or talking to a counselor can provide comfort. Shall we explore options?"
+        ]
+      },
+      {
+        "tag": "handling_bullying",
+        "patterns": [
+          "I feel bullied at work",
+          "How do I stand up to bullying?",
+          "Bullying is affecting my mental health",
+          "What should I do if someone is bullying me?",
+          "How can I deal with workplace harassment?"
+        ],
+        "responses": [
+          "Documenting incidents and seeking support from trusted individuals can help. Shall we talk about steps to take?",
+          "Standing up assertively to bullying can be effective. Would you like strategies?",
+          "Seeking support from HR or a counselor can address workplace harassment."
+        ]
+      },
+      {
+        "tag": "dealing_with_fear_of_failure",
+        "patterns": [
+          "I’m scared of failing",
+          "How do I overcome fear of failure?",
+          "Failure makes me anxious",
+          "I avoid risks because I’m scared of failing",
+          "What can I do to build confidence despite fear?"
+        ],
+        "responses": [
+          "Viewing failure as an opportunity to learn can reduce fear. Shall we reframe it together?",
+          "Taking small, calculated risks can build confidence. Let’s create a plan.",
+          "Reflecting on past successes can remind you of your resilience."
+        ]
+      },
+      {
+        "tag": "managing_jealousy",
+        "patterns": [
+          "I feel jealous of my friends’ success",
+          "How do I handle jealousy in relationships?",
+          "Jealousy is affecting my mood",
+          "I compare myself to others too much",
+          "What can I do to stop feeling jealous?"
+        ],
+        "responses": [
+          "Practicing gratitude can help shift focus from jealousy. Would you like to try?",
+          "Focusing on your own journey can reduce comparisons. Let’s explore ways to do that.",
+          "Open communication in relationships can address jealousy effectively."
+        ]
+      },
+      {
+        "tag": "coping_with_rejection",
+        "patterns": [
+          "I was rejected, and it hurts",
+          "How do I deal with rejection?",
+          "Rejection makes me feel worthless",
+          "I avoid situations because I’m scared of rejection",
+          "What can I do to handle rejection better?"
+        ],
+        "responses": [
+          "Rejection is tough, but it doesn’t define your worth. Shall we talk about it?",
+          "Reflecting on the lessons from rejection can help you grow stronger.",
+          "Building resilience and self-compassion can make handling rejection easier."
+        ]
+      },
+      {
+        "tag": "improving_communication_skills",
+        "patterns": [
+          "I want to communicate better",
+          "How do I improve my communication skills?",
+          "I feel misunderstood in conversations",
+          "What are tips for effective communication?",
+          "How can I express myself clearly?"
+        ],
+        "responses": [
+          "Practicing active listening and empathy can improve communication. Shall we explore strategies?",
+          "Using ‘I’ statements can make your communication more effective.",
+          "Role-playing challenging conversations can help build confidence."
+        ]
+      },
+      {
+        "tag": "handling_overthinking",
+        "patterns": [
+          "I can’t stop overthinking everything",
+          "How do I calm my mind from overthinking?",
+          "Overthinking makes me anxious",
+          "I dwell on the past too much",
+          "What can I do to stop spiraling thoughts?"
+        ],
+        "responses": [
+          "Practicing mindfulness can help quiet overthinking. Would you like to try?",
+          "Focusing on the present moment can reduce spiraling thoughts. Let’s explore this together.",
+          "Identifying triggers for overthinking can help you manage it more effectively."
+        ]
+      },
+      {
+        "tag": "managing_confidence_issues",
+        "patterns": [
+          "I feel like I lack confidence",
+          "How do I build self-confidence?",
+          "I’m afraid of speaking up because I doubt myself",
+          "Confidence is hard for me to develop",
+          "What can I do to feel more self-assured?"
+        ],
+        "responses": [
+          "Setting small goals and celebrating achievements can boost confidence. Let’s create a plan together.",
+          "Practicing positive affirmations can help build self-belief.",
+          "Focusing on your strengths can improve self-confidence over time."
+        ]
+      },
+      {
+        "tag": "coping_with_imposter_syndrome",
+        "patterns": [
+          "I feel like I don’t deserve my success",
+          "How do I overcome imposter syndrome?",
+          "I think people will find out I’m not as good as they think",
+          "Imposter syndrome makes me doubt myself",
+          "Why do I feel like I’m faking my abilities?"
+        ],
+        "responses": [
+          "Acknowledging your accomplishments can reduce feelings of imposter syndrome. Shall we list them?",
+          "Talking to mentors or trusted individuals can provide perspective on your skills.",
+          "Reframing self-doubt as a sign of growth can help combat imposter syndrome."
+        ]
+      },
+      {
+        "tag": "handling_conflicts_at_work",
+        "patterns": [
+          "I have disagreements with my coworkers",
+          "How do I resolve workplace conflicts?",
+          "Workplace arguments are stressing me out",
+          "I feel tension with my colleagues",
+          "What are tips for managing work conflicts?"
+        ],
+        "responses": [
+          "Practicing open communication and active listening can help resolve workplace conflicts.",
+          "Focusing on solutions rather than blame can ease tension. Would you like strategies?",
+          "Seeking support from a manager or HR can address ongoing issues effectively."
+        ]
+      }
+    ]
+  }
+  

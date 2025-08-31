@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CodeMindAI</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<style>
+			/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    background-image: url('static\img\codeming.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login {
+    width: 400px;
+    padding: 40px;
+    background-color: #ded2d25c;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333333;
+}
+
+.links {
+    margin-bottom: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #333333;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.links a.active {
+    background-color: #333333;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: none;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(42, 170, 42);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+}
+
+.msg {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.fas {
+    position: absolute;
+    margin-left: 10px;
+    color: #cccccc;
+}
+
+		</style>
+	</head>
+	<body>
+		<div class="login">
+			<h1><B><U>CodeMindAI</B></U></h1>
+			<div class="links">
+				<a href="{{ url_for('login') }}" class="active">LOGIN</a>
+				<a href="{{ url_for('register') }}">REGISTER</a>
+			</div>
+			<form action="{{ url_for('login') }}" method="post">
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<div class="msg">{{ msg }}</div>
+				<input type="submit" value="Login">
+
+				<p><a href="{{ url_for('reset_password') }}">Forgot Password?</a></p>
+
+			</form>
+		</div>
+	</body>
+</html>

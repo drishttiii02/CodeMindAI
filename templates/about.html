@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title><B>CodeMindAI </B></title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Threat Detection, Machine Learning, Cybersecurity" name="keywords">
+    <meta content="Project on Threat Detection Engine leveraging Machine Learning techniques" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary"><i class="fas fa-shield-alt me-3"></i><B>CodeMindAI</B></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="{{ url_for('home') }}" class="nav-item nav-link ">Home</a>
+                    <a href="{{ url_for('about') }}" class="nav-item nav-link active">About</a>
+                    <a href="{{ url_for('upload_image1') }}" class="nav-item nav-link">Webcam</a>
+                    <a href="{{ url_for('depression_screen') }}" class="nav-item nav-link">Depression Screen</a>
+                    <a href="{{ url_for('prediction') }}" class="nav-item nav-link">Chatbot</a>
+    
+
+                    <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb" style="position: relative; background: url('../static/img/site-bg.jpg') no-repeat center center/cover;">
+    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+    <div class="container text-center py-5" style="max-width: 900px; position: relative; z-index: 1;">
+        <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h4>
+        <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            <li class="breadcrumb-item"><a href="index.html" class="text-white"></a></li>
+
+            <li class="breadcrumb-item active text-primary"></li>
+        </ol>    
+    </div>
+</div>
+<!-- Header End -->
+
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text btn border p-3"><i class="fa fa-search text-white"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- About Start -->
+<div class="container-fluid about py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="about-img rounded h-100">
+                    <img src="static\img\codeming.jpg" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="">
+                </div>
+            </div>
+            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="about-item">
+                    <h4 class="text-primary text-uppercase">About Us</h4>
+                    <h1 class="display-3 mb-3">Revolutionizing Mental Health Support</h1>
+                    <p class="mb-4">Our mission is to empower youth and adolescents by leveraging advanced NLP and AI technology to detect early signs of emotional distress and provide personalized mental health support.</p>
+                    <div class="bg-light rounded p-4 mb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex">
+                                    <div class="pe-4">
+                                        <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;"><i class="fas fa-brain text-white fa-2x"></i></div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="h4 d-inline-block mb-3">Advanced NLP</a>
+                                        <p class="mb-0">State-of-the-art NLP models to recognize and respond to emotional cues.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded p-4 mb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex">
+                                    <div class="pe-4">
+                                        <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;"><i class="fas fa-user-md text-white fa-2x"></i></div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="h4 d-inline-block mb-3">Expert Support</a>
+                                        <p class="mb-0">Connecting users seamlessly with professional mental health resources.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-secondary rounded-pill py-3 px-5"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+    
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/lib/wow/wow.min.js"></script>
+    <script src="../static/lib/easing/easing.min.js"></script>
+    <script src="../static/lib/waypoints/waypoints.min.js"></script>
+    <script src="../static/lib/counterup/counterup.min.js"></script>
+    <script src="../static/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../static/js/main.js"></script>
+</body>
+
+</html>

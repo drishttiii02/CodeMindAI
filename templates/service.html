@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Threat Detection, Machine Learning, Cybersecurity" name="keywords">
+    <meta content="Project on Threat Detection Engine leveraging Machine Learning techniques" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../static/css/style.css" rel="stylesheet">
+
+    <!-- Add custom CSS for form styling -->
+    <style>
+        /* Center the chat box container */
+        .centered-content {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Chat box appearance */
+        #chat-box {
+            max-height: 400px;
+            overflow-y: auto;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style for bot and user messages */
+        .bot-message {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+
+        .user-message {
+            background-color: #e6e6e6;
+            color: #000;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            max-width: 80%;
+            word-wrap: break-word;
+            align-self: flex-end;
+        }
+
+        /* Form input and button styling */
+        #chat-form {
+            display: flex;
+            gap: 10px;
+        }
+
+        #user-input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        #chat-form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #chat-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary"><i class="fas fa-shield-alt me-3"></i><B>CodeMindAI</B></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="{{ url_for('home') }}" class="nav-item nav-link ">Home</a>
+                    <a href="{{ url_for('about') }}" class="nav-item nav-link">About</a>
+                    <a href="{{ url_for('upload_image1') }}" class="nav-item nav-link">Webcam</a>
+                    <a href="{{ url_for('depression_screen') }}" class="nav-item nav-link">Depression Screen</a>
+                    <a href="{{ url_for('prediction') }}" class="nav-item nav-link active">Chatbot</a>
+   
+                    <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb" style="position: relative; background: url('../static/img/site-bg.jpg') no-repeat center center/cover;">
+            <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+            <div class="container text-center py-5" style="max-width: 900px; position: relative; z-index: 1;">
+                 
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Form Section -->
+        <div class="container centered-content">
+            <h1>Mental Health Chatbot</h1>
+            <div id="chat-box">
+                <div class="bot-message">Hi! How can I help you today?</div>
+            </div>
+            <form id="chat-form">
+                <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <script>
+            const chatForm = document.getElementById("chat-form");
+            const chatBox = document.getElementById("chat-box");
+
+            chatForm.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                const userInput = document.getElementById("user-input").value;
+
+                // Display user message
+                const userMessageDiv = document.createElement("div");
+                userMessageDiv.className = "user-message";
+                userMessageDiv.textContent = userInput;
+                chatBox.appendChild(userMessageDiv);
+
+                // Fetch response from Flask backend
+                const response = await fetch("/get_response", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                    },
+                    body: new URLSearchParams({ user_input: userInput }),
+                });
+
+                const data = await response.json();
+
+                // Display bot response
+                const botMessageDiv = document.createElement("div");
+                botMessageDiv.className = "bot-message";
+                botMessageDiv.textContent = data.response;
+                chatBox.appendChild(botMessageDiv);
+
+                // Scroll chatbox to bottom
+                chatBox.scrollTop = chatBox.scrollHeight;
+
+                // Clear input field
+                document.getElementById("user-input").value = "";
+            });
+        </script>
+
+        <!-- Footer -->
+        <footer class="text-center py-4">
+      
+        </footer>
+        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../static/lib/wow/wow.min.js"></script>
+        <script src="../static/lib/easing/easing.min.js"></script>
+        <script src="../static/lib/waypoints/waypoints.min.js"></script>
+        <script src="../static/lib/counterup/counterup.min.js"></script>
+        <script src="../static/lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="../static/js/main.js"></script>
+</body>
+
+</html>
